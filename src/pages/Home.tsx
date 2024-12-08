@@ -1,9 +1,11 @@
 import CardsPokemon from '../components/cards';
 import PokemonDetail from "../components/PokemonDetails";
+import { PokemonProvider } from "../context/PokemonContext";
+
 
 function Home() {
   return (
-    <section>
+    <PokemonProvider >
       <div className="min-h-screen flex">
         <aside className="w-1/4 bg-[#156c5f] p-4">
           <header>
@@ -67,7 +69,7 @@ function Home() {
           </div>
         </main>
       </div>
-    </section>
+    </PokemonProvider>
   )
 }
 
